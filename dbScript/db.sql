@@ -22,8 +22,8 @@ INSERT INTO `products` VALUES (1,'Tea',5.00,55,1,'2019-11-19 03:30:30','2021-07-
 -- table `users`
 CREATE TABLE IF NOT EXISTS `users` (
    `Id` BIGINT UNSIGNED AUTO_INCREMENT,
-  `Name` varchar(255) NOT NULL,
   `Username` varchar(255) NOT NULL,
+  `Email` varchar(255) NOT NULL,
   `Password` mediumtext NOT NULL,
   `Status` TINYINT UNSIGNED DEFAULT 1,
   `Created_at` DATETIME NOT NULL,
@@ -32,4 +32,4 @@ CREATE TABLE IF NOT EXISTS `users` (
 ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- add dump data
-INSERT INTO `users` VALUES (2,'abdullah','ads','','1','2019-11-19 03:30:30','2021-07-27 22:30:30');
+INSERT INTO `users` VALUES (1,'abdullah','abdullah@abdullah.com','a-y-l123','1','2019-11-19 03:30:30','2021-07-27 22:30:30');
