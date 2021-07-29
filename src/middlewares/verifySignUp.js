@@ -12,9 +12,11 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
                 res.status(400).send({
                 message: "Failed! Username is already in use!" 
             });
-            return;
+            //next(errr,null);
             }
-            next();
+            else{
+            //next();
+            }next();
         }
     }); 
 };

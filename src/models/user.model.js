@@ -86,7 +86,7 @@ User.login = function (user, result) {
         result(null,userWithToken);
       }
       else { 
-      result("wornge password",null);
+        result(null,null);
       }
     }
     else {

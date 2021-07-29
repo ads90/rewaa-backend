@@ -65,6 +65,9 @@ exports.login = function (request, response) {
     User.login(new User(request.body), function (err, user) {
       if (err)
         response.send(err);
+      if(!user)
+      response.status(400).send({ error: true, message: 'User Not Found' });
+      else
       response.json({ error: false, message: 'User loggedIn', data:user });
     });
   }
